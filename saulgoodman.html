@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BETTER CALL SAUL!</title>
+    <link rel="stylesheet" href="saulgoodman.css">
+</head>
+<body>
+
+    <div id="intro-overlay">
+        
+        <img src="description.jpg" 
+             alt="Project Info" 
+             class="info-icon" 
+             title="Project Description"
+             onclick="openDescription()">
+
+        <div id="desc-modal" class="modal-hidden">
+            <div class="modal-content">
+                <span class="close-modal" onclick="closeDescription()">&times;</span>
+                <h2>PROJECT OVERVIEW</h2>
+                <p>
+                    <strong>Unpopular opinion: Superhero POVs are overrated,</strong> so we decided on one of the most iconic characters of the TV drama series <em>Better Call Saul</em>.
+                </p>
+                <p>
+                    <strong>Saul Goodman</strong> is an absolute icon and a really fun character, but our POV shows the user as a <strong>potential client</strong>. The webpage is a personified version of Saul's personality—witty and humorous aside from being a good lawyer.
+                </p>
+                <p>
+                    The website theme is based on the <strong>late 90's, early 2000's pop color style</strong>. The project is full of interactive and visual bloopers, and for the full experience, we recommend you explore the whole web page.
+                </p>
+            </div>
+        </div>
+
+        <img src="better_call_saul.png" alt="Better Call Saul Logo" class="intro-logo">
+
+        <div class="door-frame" onclick="openTheDoor()">
+            <div id="office-door" class="door">
+                <div class="knob"></div>
+                <div class="door-plate">J. McGILL</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="video-overlay" class="hidden">
+        <video id="intro-video" width="100%" height="100%">
+            <source src="intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <button id="skip-btn" onclick="enterSite()">SKIP INTRO >></button>
+    </div>
+
+    <div id="main-website" class="hidden-content">
+        
+        <div class="marquee-container">
+            <p class="scrolling-text">🚨 CONSTITUTION SAYS YOU HAVE RIGHTS! 🚨 CALL NOW! 505-503-4455 🚨 SUE 'EM ALL! 🚨</p>
+        </div>
+
+        <div class="page-wrapper">
+
+            <main class="container">
+                <header class="starburst-header">
+                    <h1 id="theme-song-btn">BETTER CALL SAUL!</h1>
+                    <br> 
+                    <h2 style="position: relative; z-index: 2;">Lawyer Up. Delete the Gym. Hit the Facebook.</h2>
+                </header>
+
+                <section class="hero-grid">
+                    <div class="pitch-card">
+                        <h3>IN TROUBLE?</h3>
+                        <ul>
+                            <li>👮 DUI?</li>
+                            <li>🍟 Didn't like your Happy Meal?</li>
+                            <li>💸 Money Laundering?</li>
+                            <li>🐅 Tiger Ownership Disputes?</li>
+                        </ul>
+                        <button class="call-btn">CLICK TO SUE!</button>
+                    </div>
+
+                    <div class="saul-card">
+                        <div class="image-placeholder">
+                            <img id="saul-main-img" src="bcs1.jpeg" alt="Saul Goodman">
+                        </div>
+                        
+                        <h3 class="flashy-confidence">THE FACE OF LEGAL CONFIDENCE !!</h3>
+                        
+                        <p class="caption">"I fight for YOU, Albuquerque!"</p>
+                    </div>
+                </section>
+            
+                <section class="interactive-buttons">
+                    <div class="button-row">
+                        <button class="advice-btn free-btn" onclick="getFreeAdvice()">
+                            FREE LEGAL ADVICE
+                        </button>
+                        
+                        <button class="advice-btn wisdom-btn" onclick="getWisdom()">
+                            WORDS OF WISDOM
+                        </button>
+                    </div>
+
+                    <div id="advice-display" class="advice-box">
+                        <p id="advice-text">Click a button above!</p>
+                    </div>
+                </section>
+
+                <section class="testimonials">
+                    <h3>REAL REVIEWS*</h3>
+                    <div class="review-box">
+                        <p>"He got my sentence reduced from 20 years to 6 months probation!"</p>
+                        <span>- Badger, satisfied client</span>
+                    </div>
+                    <div class="review-box">
+                        <p>"I don't know who this is, please stop calling me."</p>
+                        <span>- Skyler W.</span>
+                    </div>
+                    <div class="review-box">
+                        <p>"Cops found the 'stuff' in my trunk, but Saul proved the search warrant was signed in the wrong color ink! CASE DISMISSED!"</p>
+                        <span>- Skinny H., Entrepreneur</span>
+                    </div>
+                    <div class="review-box">
+                        <p>"Won defamation suite against 30 people for calling me short. Now that's a long list. Thank you, Saul!"</p>
+                        <span>- B. Paarth</span>
+                    </div>
+                    <div class="review-box">
+                        <p>"My cousin drove his lowrider through a wall. Saul sued the wall for being in the way. WE GOT PAID!"</p>
+                        <span>- Tuco S.</span>
+                    </div>
+                    <div class="review-box">
+                        <p>"Let's just say the sunroof was open and the kids were in the back seat. Saul called it 'expressionism'. Highly recommend!"</p>
+                        <span>- Marco from Cicero</span>
+                    </div>
+                    <div class="review-box audio-evidence">
+                        <div class="tape-label">📼 VOICEMAIL EVIDENCE #104</div>
+                        <audio controls class="tacky-player">
+                            <source src="jesse.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <span class="audio-credit">- Jesse Pinkman</span>
+                    </div>
+                    <small>*Results not typical. Not legal advice.</small>
+                </section>
+            </main>
+
+            <aside class="ad-sidebar">
+                <div class="ad-header">📢 PAID ADVERTISEMENT 📢</div>
+                
+                <div class="ad-container">
+                    <img id="rotating-ad" src="ad1.jpg" alt="Saul Goodman Ad">
+                </div>
+
+                <div class="sponsor-block">
+                    <h3 class="sponsor-title">OUR PROUD SPONSOR</h3>
+                    
+                    <h2 style="color: #FF0000; font-family: 'Impact', sans-serif; margin-bottom: 10px; text-shadow: 1px 1px 0 #000;">
+                        LOS POLLOS HERMANOS
+                    </h2>
+                    
+                    <div class="sponsor-image-wrapper">
+                        <img src="lps.jpg" class="sponsor-logo-overlay" alt="Los Pollos Hermanos Logo">
+                        <img src="sponsor.jpg" class="main-sponsor-img" alt="Sponsor Image">
+                    </div>
+                    
+                    <p class="sponsor-tagline">"Where something delicious is always cooking"</p>
+                </div>
+
+                <div class="ad-text-block" style="margin-top: 20px;">
+                    <h3>NEED A BURNER?</h3>
+                    <p>CALL 505-842-5662</p>
+                </div>
+            </aside>
+
+        </div> 
+    </div>
+    
+    <audio id="saul-audio" src="theme.mp3"></audio>
+    <script src="script.js"></script>
+
+</body>
+</html>
