@@ -15,7 +15,11 @@ The website theme is based on the **late 90's, early 2000's pop colour style**. 
 
 ## 🎥 Demo
 
-https://github.com/user-attachments/assets/d8c6f72b-8e2b-4e9d-896c-defd3d79709d
+
+
+https://github.com/user-attachments/assets/72e3b039-666a-4a0c-ad34-e9a50aeb4a65
+
+
 
 
 
