@@ -29,7 +29,7 @@ https://github.com/user-attachments/assets/d8c6f72b-8e2b-4e9d-896c-defd3d79709d
 * **Legal Advice Generator:** Randomly generates "Free Legal Advice" (which isn't actually helpful) and "Words of Wisdom" from Saul himself.
 * **Easter Eggs:**
     * Spinning Los Pollos Hermanos logo.
-    * Hidden "Project Description" case file.
+    * "Project Description".
     * Rotating advertisement sidebar.
 
 ## 🛠️ Tech Stack
