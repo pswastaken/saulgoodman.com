@@ -167,14 +167,62 @@
 
                 <div class="ad-text-block" style="margin-top: 20px;">
                     <h3>NEED A BURNER?</h3>
-                    <p>CALL 505-842-5662</p>
+                    <p style="cursor: pointer; text-decoration: underline; color: #FFD700;" onclick="openBurnerPhone()">CALL 505-842-5662</p>
                 </div>
             </aside>
 
         </div> 
     </div>
+
+    <div id="saul-chat-widget" class="chat-hidden" style="display: none;">
+        <div class="chat-header" onclick="toggleChat()">
+            🔴 CHAT WITH SAUL LIVE! (Online)
+            <span class="close-chat" onclick="closeChat(event)">&times;</span>
+        </div>
+        <div class="chat-body">
+            <div id="chat-messages">
+                <div class="msg saul-msg">Saul: You're in trouble. I can tell. What's the charge?</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Confess here...">
+                <button onclick="sendMessage()" id="chat-send-btn">SEND</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="burner-modal" class="modal-hidden">
+        <div class="burner-content">
+            <span class="close-modal" onclick="closeBurner()">&times;</span>
+            <div class="brand-name">NOKLA</div>
+            <div class="phone-screen" id="phone-display">_</div>
+            <div class="keypad">
+                <button onclick="pressKey('1')">1</button>
+                <button onclick="pressKey('2')">2</button>
+                <button onclick="pressKey('3')">3</button>
+                <button onclick="pressKey('4')">4</button>
+                <button onclick="pressKey('5')">5</button>
+                <button onclick="pressKey('6')">6</button>
+                <button onclick="pressKey('7')">7</button>
+                <button onclick="pressKey('8')">8</button>
+                <button onclick="pressKey('9')">9</button>
+                <button onclick="pressKey('*')">*</button>
+                <button onclick="pressKey('0')">0</button>
+                <button onclick="pressKey('#')">#</button>
+            </div>
+            <button class="call-btn-small" onclick="checkNumber()">CALL / SEND</button>
+        </div>
+    </div>
+
+    <footer class="sketchy-footer">
+            <p>
+                &copy; 2002 Saul Goodman & Associates. Totally a real law firm. 
+                <a href="#" onclick="startTermsTrap(event)">Terms and Conditions</a>
+            </p>
+    </footer>
     
     <audio id="saul-audio" src="theme.mp3"></audio>
+    <audio id="hacker-audio" src="hello.mp3"></audio>
+    <script src="script.js"></script>
     <script src="script.js"></script>
 
 </body>
