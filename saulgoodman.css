@@ -722,3 +722,258 @@ body.intro-active {
 .close-modal:hover {
     color: #000;
 }
+/* --- LIVE CHAT WIDGET --- */
+#saul-chat-widget {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 300px;
+    background-color: #c0c0c0;
+    border: 4px outset #fff;
+    z-index: 10000;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    box-shadow: -5px -5px 10px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+#saul-chat-widget.chat-hidden {
+    transform: translateY(calc(100% - 40px));
+}
+
+.chat-header {
+    background-color: #000080;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+    animation: police-flash 2s infinite;
+}
+
+@keyframes police-flash {
+    0%, 100% { background-color: #000080; }
+    50% { background-color: #FF0000; }
+}
+
+.chat-body {
+    padding: 10px;
+    background-color: #c0c0c0;
+}
+
+#chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    border: 3px inset #fff;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #FFFFE0;
+    font-size: 0.95rem;
+}
+
+.msg {
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.saul-msg {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.user-msg {
+    color: #000080;
+    text-align: right;
+    font-style: italic;
+}
+
+.chat-input-area {
+    display: flex;
+    gap: 5px;
+}
+
+#chat-input {
+    flex: 1;
+    padding: 5px;
+    border: 2px inset #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+#chat-send-btn {
+    background-color: #FFD700;
+    border: 3px outset #DAA520;
+    font-family: 'Impact', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+#chat-send-btn:active {
+    border-style: inset;
+}
+
+.close-chat {
+    float: right;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.close-chat:hover {
+    color: #FFD700;
+}
+
+/* --- BURNER PHONE EASTER EGG --- */
+#burner-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 10005;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+#burner-modal.modal-visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.burner-content {
+    background-color: #333;
+    width: 320px;
+    padding: 30px 20px 20px 20px;
+    border: 4px solid #111;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+    box-shadow: inset 0 0 15px rgba(255,255,255,0.2), 10px 10px 0px #000;
+}
+
+.brand-name {
+    color: #888;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.phone-screen {
+    background-color: #9ea771;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 4px inset #555;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    letter-spacing: 3px;
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.keypad button {
+    background-color: #ccc;
+    border: 4px outset #eee;
+    font-size: 1.5rem;
+    font-family: 'Arial Black', sans-serif;
+    padding: 15px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #333;
+}
+
+.keypad button:active {
+    border-style: inset;
+    background-color: #aaa;
+}
+
+.call-btn-small {
+    width: 100%;
+    background-color: #00FF00;
+    color: #006600;
+    font-family: 'Impact', sans-serif;
+    font-size: 1.5rem;
+    padding: 12px;
+    border: 4px outset #66FF66;
+    cursor: pointer;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.call-btn-small:active {
+    border-style: inset;
+}
+
+/* --- CUSTOM GAVEL CURSOR --- */
+body {
+    cursor: url('gavel.png') 16 16, auto;
+}
+
+body.gavel-down {
+    cursor: url('gavel-down.png') 16 16, auto !important;
+}
+
+button, a, input, .info-icon, .close-modal, .door-frame, .chat-header {
+    cursor: url('gavel.png') 16 16, pointer;
+}
+
+body.gavel-down button, 
+body.gavel-down a, 
+body.gavel-down input, 
+body.gavel-down .info-icon, 
+body.gavel-down .close-modal, 
+body.gavel-down .door-frame,
+body.gavel-down .chat-header {
+    cursor: url('gavel-down.png') 16 16, pointer !important;
+}
+
+/* --- SKETCHY FOOTER & T&C TRAP --- */
+.sketchy-footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px;
+    font-size: 0.8rem; 
+    color: #fff;
+    background-color: #000;
+    font-family: 'Arial', sans-serif;
+    border-top: 3px solid #FF0000;
+    position: relative;
+    z-index: 10;
+}
+
+.sketchy-footer a {
+    color: #FFD700;
+    background-color: #222;
+    padding: 2px 6px;
+    border: 1px solid #FFD700;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sketchy-footer a:hover {
+    color: #FFF;
+    background-color: #FF0000;
+    border-color: #FFF;
+}
