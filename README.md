@@ -27,13 +27,17 @@ https://github.com/user-attachments/assets/72e3b039-666a-4a0c-ad34-e9a50aeb4a65
 
 * **Cinematic Intro:** A 3D interactive door animation that zooms into a video introduction, simulating walking into Saul's office.
 * **Retro Aesthetics:** Styled with loud colors, marquee scrolling text, and "tacky" design elements reminiscent of early 2000s web design.
+* **Custom Gavel Cursor:** Pass judgment on every click with a custom wooden gavel cursor that visually strikes down when the mouse is pressed.
+* **Aggressive Live Chat:** A completely unhelpful, 90s-style pop-up chat widget that automatically demands cash and bearer bonds regardless of your legal emergency.
+* **Endless Legal Trap:** A sketchy "Terms and Conditions" link hidden in the footer that traps curious users in a recursive loop of absurd, legally binding pop-up agreements.
 * **Interactive Soundboard:**
     * Click the header to play the *Better Call Saul* theme song.
     * Listen to "Voicemail Evidence" from **Jesse Pinkman**.
 * **Legal Advice Generator:** Randomly generates "Free Legal Advice" (which isn't actually helpful) and "Words of Wisdom" from Saul himself.
 * **Easter Eggs:**
+    * **Interactive "NOKLA" Burner Phone:** Click the phone number in the sidebar to open a retro keypad modal. Dialing Saul's actual number (505-842-5662) establishes a highly illegal, encrypted audio connection.
     * Spinning Los Pollos Hermanos logo.
-    * "Project Description".
+    * "Project Description" modal.
     * Rotating advertisement sidebar.
 
 ## 🛠️ Tech Stack
